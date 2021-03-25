@@ -1,0 +1,35 @@
+/* CSS for header section of homepage*/
+
+.header {
+    padding: 13px;
+}
+
+#logo {
+    text-decoration: none;
+    color :blue;
+    font-family: 'satisfy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#tagline {
+    font-family: 'Cookie';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#signup,#signin {
+    color: white;
+    background-color: blue;
+    float: right;
+    font-style: normal;
+    width:100px;
+    padding: 8px 10px 8px 10px;
+    margin: 3px 3px;
+    align-items: center;
+    position: relative;
+}
+
