@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <!-- All CSS for header section has been placed in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+      <!-- All CSS for all the sections and pages of website except header section has been placed in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
 
-<head>
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+        <!-- Header section of Homepage -->
+        <div id="main-div">
+          <div class="header">
+            <a href="index.html" id="logo">ScriBBler</a>
+            <button type="button" id="signup" onclick="" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+            <button type="button" id="signin" data-toggle="modal" data-target="#signinModal">Sign In</button>
+            <p id="tagline">Explore, Imagine, Create</p>
+          </div>
+        </div>
 
-  <!-- All CSS for header section has been placed in this file -->
-  <link href='css\header.css' rel='stylesheet' type='text/css'>
+        <!-- code for User Sign up modal -->
+        <div id="signUp_div">
+          <div class="modal" id="signupModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Get Started</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="fullName">Full Name</label>
+                      <input type="text" class="form-control" id="full_name" aria-describedby="emailHelp"
+                      placeholder="Enter Full Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="userName">Username</label>
+                      <input type="text" class="form-control" id="user_name" aria-describedby="emailHelp"
+                      placeholder="Enter Username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="first_password" placeholder="Enter Password"
+                      required>
+                    </div>
+                    <div class="form-group">
+                      <label for="confirmPassword">Confirm Password</label>
+                      <input type="password" class="form-control" id="confirm_password" placeholder="Confirm Password"
+                      required>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn btn-success signUp_button">Sign Up</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <!-- All CSS for all the sections and pages of website except header section has been placed in this file -->
-  <link href='css\index.css' rel='stylesheet' type='text/css'>
-
-  <link href='css\font.css' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-</head>
-
-<body>
-  <!-- Header section of Homepage -->
-  <div id="main-div">
-    <div class="header">
-      <a href="index.html" id="logo">ScriBBler</a>
-      <button type="button" id="signup" data-toggle="modal" data-target="#mySignupModal">Sign Up</button>
-      <button type="button" id="signin" data-toggle="modal" data-target="#mySigninModal">Sign In</button>
-      <p id="tagline">Explore, Imagine, Create</p>
-    </div>
-  </div>
-</body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+  </body>
 </html>
