@@ -50,3 +50,18 @@ input{
    padding: 5px;
    margin-top: 12px;
 }
+
+.modal-dialog{
+
+   top: 10%;
+}
+
+#newUser_div{
+
+   padding: 5px;
+   margin-top: 10px;
+   text-align: center;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 17px;
+}
