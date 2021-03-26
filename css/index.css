@@ -44,7 +44,7 @@ input{
    width: 100%;
 }
 
-.signUp_button{
+.signIn_button,.signUp_button{
 
    width: 100%;
    padding: 5px;

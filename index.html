@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <!-- All CSS for header section has been placed in this file -->
@@ -70,6 +70,37 @@
           </div>
         </div>
 
+        <!-- code for User Sign In modal -->
+        <div id="signIn_div">
+          <div class="modal" id="signinModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Welcome Back!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="user_name1">Enter Username</label>
+                      <input type="text" class="form-control" id="user_name1" aria-describedby="emailHelp"
+                      placeholder="Enter Username" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="login_password" placeholder="Enter Password"
+                      required>
+                    </div>
+                    <div>
+                    <button type="submit" class="btn btn-success signIn_button">Sign In</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>

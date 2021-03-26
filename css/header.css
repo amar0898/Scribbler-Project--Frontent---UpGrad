@@ -1,10 +1,12 @@
-/* CSS for header section of homepage*/
+/* Css for header section ogf homepage */
 
 .header {
+
     padding: 13px;
 }
 
 #logo {
+
     text-decoration: none;
     color :blue;
     font-family: 'satisfy';
@@ -14,6 +16,7 @@
 }
 
 #tagline {
+
     font-family: 'Cookie';
     font-style: normal;
     font-weight: 500;
@@ -22,6 +25,7 @@
 }
 
 #signup,#signin {
+
     color: white;
     background-color: blue;
     float: right;
