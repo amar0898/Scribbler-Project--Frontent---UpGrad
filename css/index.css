@@ -44,7 +44,7 @@ input{
    width: 100%;
 }
 
-.signIn_button,.signUp_button{
+.signIn_button,.signUp_button,.createPost_button{
 
    width: 100%;
    padding: 5px;
@@ -64,4 +64,37 @@ input{
    font-style: normal;
    font-weight: 600;
    font-size: 17px;
+}
+
+#main-post-buttons{
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   height: 40%;
+   position: fixed;
+   justify-content: center;
+}
+
+#display_posts,#create_post{
+
+   background-color: #fbc531;
+   color: black;
+   font-weight: bold;
+   width: 110px;
+   margin: 7px;
+   padding: 10px;
+}
+
+#postTitle{
+
+   width: 215px;
+}
+
+#postContent{
+	
+   width: 470px;
+   height: 200px;
+   background-color: #f1f1f1 !important;
 }

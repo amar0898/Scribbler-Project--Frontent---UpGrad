@@ -5,9 +5,10 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <!-- All CSS for header section has been placed in this file -->
+
+    <!-- All CSS for header section has been placed in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
-      <!-- All CSS for all the sections and pages of website except header section has been placed in this file -->
+    <!-- All CSS for all the sections and pages of website except header section has been placed in this file -->
     <link href='css\index.css' rel='stylesheet' type='text/css'>
 
     <link href='css\font.css' rel='stylesheet' type='text/css'>
@@ -96,6 +97,7 @@
                     <div>
                     <button type="submit" class="btn btn-success signIn_button">Sign In</button></div>
                   </form>
+
                   <!-- Code for not a member functionality, redirect to signUp modal if a new user come on signIn modal -->
                   <div id="newUser_div">
                     <p id="not-a-member">Not a member? <a href="#" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#signupModal">Sign Up</a></p>
@@ -105,6 +107,43 @@
             </div>
           </div>
         </div>
+
+        <!-- code for all Posts & create Post buttons on homepage-->
+        <div id="main-post-buttons">
+          <button type="button" id="display_posts">All Posts</button>
+          <button type="button" id="create_post" data-toggle="modal" data-target="#create_Post">Create Post</button>
+        </div>
+
+        <!-- code for create Post button modal-->
+        <div id="create-post-div">
+          <div class="modal" id="create_Post">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Pen Your Post</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="postTitle">Title:</label>
+                    <input type="text" class="form-control" id="postTitle" aria-describedby="emailHelp"
+                    required>
+                  </div>
+                  <div class="form-group">
+                    <label for="postContent">Content:</label>
+                    <textarea class="form-control" id="postContent" required></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success createPost_button">Create</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
         </script>
