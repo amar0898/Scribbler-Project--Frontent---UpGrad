@@ -111,3 +111,42 @@ input{
    padding: 4px;
    box-shadow: 0px 3px 3px 1px #f7a1b5; 
 }
+
+/* CSS for post like and comments */
+
+#like_post{
+
+   background-color: #ef3b65;
+   color: white;
+   border-radius: 3px;
+   border: 0px;
+   margin-top: 15px;
+   padding: 10px 35px;
+   box-shadow: 0px 3px 3px 1px #f7a1b5;
+}
+
+#comment_post{
+
+   background-color: #ef3b65;
+   color: white;
+   border-radius: 3px;
+   border: 0px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   display: block;
+   padding: 10px 30px;
+   box-shadow: 0px 3px 3px 1px #ef3b65;              
+}
+
+#comment_area{
+
+   width: 60%;
+   margin-top: 20px;              
+}
+
+#show_all_comments{
+
+   font-size: 17px;
+   margin-top: 40px;
+   font-weight: 600;
+}
