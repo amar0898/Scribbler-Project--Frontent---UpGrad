@@ -138,7 +138,7 @@ input{
    box-shadow: 0px 3px 3px 1px #ef3b65;              
 }
 
-#comment_area{
+#comment_section{
 
    width: 60%;
    margin-top: 20px;              
@@ -149,4 +149,17 @@ input{
    font-size: 17px;
    margin-top: 40px;
    font-weight: 600;
+}
+
+.user_comments{
+
+   background-color: white;
+   margin-top: 15px;
+   padding: 20px 10px;               
+}
+
+#show_comments{
+
+   background-color: #e2e4e6;
+   margin-bottom: 20px;               
 }

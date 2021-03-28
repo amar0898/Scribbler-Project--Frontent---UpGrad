@@ -37,3 +37,19 @@ function countOfLikes(){
     	document.getElementById("like_count").innerHTML = countLikes +' people have liked this!';
     }
 }
+
+/* code for displaying user's comments on post */
+
+function commentOnPost(comment){
+
+	var comment_area = document.createElement('div');
+	var userComment = document.createTextNode(comment.value);
+	comment_area.appendChild(userComment);
+	comment_area.classList.add('user_comments');
+	var showComments = document.getElementById('show_comments');
+
+	/* this prepend() method is used so that latest new comments always show up on the top of older comments */
+	showComments.prepend(comment_area);
+	show_comments.style.padding = '10px 20px 20px 20px';
+
+}

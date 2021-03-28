@@ -146,9 +146,12 @@
                     </div>
                     <button type="button" id="like_post" onclick="countOfLikes()"><i class="fa fa-thumbs-up"></i>&nbsp;Like</button>
                     <p id="like_count">Be the first one to like this!</p>
-                    <textarea id="comment_area" rows="8" placeholder="Leave a comment..."></textarea>
-                    <button type="button" id="comment_post">Comment</button>
+                    <textarea id="comment_section" rows="8" placeholder="Leave a comment..."></textarea>
+                    <button type="button" id="comment_post" onclick="commentOnPost(comment_section)">Comment</button>
                     <p id="show_all_comments" style="font-weight: bold;">All Comments</p>
+                    <div id="show_comments">
+                        
+                    </div>
                 </div>
                 <script src="..\js\index.js"></script>
 
