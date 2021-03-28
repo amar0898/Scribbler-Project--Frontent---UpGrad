@@ -17,3 +17,23 @@ function editPost () {
         document.getElementById('edit_button').innerHTML='Save <i class="fa fa-save"></i>';
 	}
 }
+
+/* code for counting the likes and display message on the basis of number of times like button clicked */
+
+var countLikes = 0;
+function countOfLikes(){
+    
+    if(countLikes==0){
+     
+    countLikes++;
+	document.getElementById('like_post').innerHTML = '<i class="fa fa-thumbs-up"></i>&nbsp;Liked!';
+	document.getElementById("like_count").innerHTML = countLikes+' person liked this!';
+
+    }
+    
+    else{
+
+    	countLikes++;
+    	document.getElementById("like_count").innerHTML = countLikes +' people have liked this!';
+    }
+}
