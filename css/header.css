@@ -37,3 +37,18 @@
     position: relative;
 }
 
+
+/* code for screen size with 700px when screen size is reduced to 700px */
+
+@media only screen and (max-width: 400px) {
+    #signup,#signin {
+
+    padding: 5px;
+    margin: 13px 3px;
+    }
+    
+    #tagline {
+
+        font-size: 13px;
+    }
+}

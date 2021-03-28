@@ -164,3 +164,34 @@ input{
     
    margin-top: 30px;          
 }
+
+/* code for screen size with 1000px when screen size is reduced to 1000px */
+@media only screen and (max-width : 1000px ){
+
+.post_title{
+
+   font-size: 17px;
+}
+}
+
+/* code for screen size with 700px when screen size is reduced to 700px */
+@media only screen and (max-width: 700px) {
+
+.post{
+
+   width: 80%;
+} 
+.post_title{
+
+   font-size: 20px;
+}
+}
+
+/* code for screen size with 480px when screen size is reduced to 480px */
+@media only screen and (max-width: 480px) {
+
+    .post-title{
+
+   font-size: 16px;
+}
+}
